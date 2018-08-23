@@ -1,36 +1,30 @@
-<section>
-  <form class="signIn">
-        <label for ="username">username:
-        </label>
-          <input id="usernameSignIn" name="username" type="text" required>
-        <br>
-        <label for= "password">password:
-        </label>
-          <input id="passwordSignIn" name="password" type="password" required>
-        <br>
-          <label>
-          </label>
-              <input id="signIn" type="submit" name="sign in" value="sign in">
-              <label id="signInRules"></label>
-        </form>
-        <br><br>
-        <form class="signUp">
-          <label for ="username">username:
-          </label>
-            <input id="usernameSignUp" name="username" type="text" required>
-          <br>
-          <label for ="password">password:
-          </label>
-            <input id="passwordSignUp" name="password "type="password" required>
-          <label>
-            <br>
-            <label for ="confirm">confirm password:
-            </label>
-            <input id="confirm" name="confirm "type="password" required>
-        <br>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>login</title>
+</head>
+
+<body>
+  <section class="form">
+    <h1>Login</h1>
+
+    <form method="POST" novalidate>
+      <label for="userName">User name:
+        <input id="userNameLogin" name ="usernameLogin" class='input' type="text" required/>
+      </label>
+      <label for="password">Password:
+        <input id="passwordLogin" class="input" name='passLogin' type="password"  />
+      </label>
 
 
-                <input id="signUp" type="submit" name="sign up" value="sign up">
-              <label id="rules"></label>
-            </form>
+      <input type="submit" value="Login">
+      <a href="signUp.html">Not user ?  Sign up ! </a>
+    </form>
   </section>
+  <script src="logIn.js" type="text/javascript"></script>
+</body>
+
+</html>
