@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "watch 'npm run build' src/database/build.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.18.3",
-    "pg-promise": "^8.4.6"
+    "pg-promise": "^8.4.6",
+    "watch": "^1.0.2"
   }
 }
