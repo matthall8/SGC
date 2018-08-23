@@ -1,0 +1,27 @@
+{
+  "name": "sgc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN4/SGC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN4/SGC/issues"
+  },
+  "homepage": "https://github.com/FACN4/SGC#readme",
+  "dependencies": {
+    "cookie-session": "^2.0.0-beta.3",
+    "env2": "^2.2.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.18.3",
+    "pg-promise": "^8.4.6"
+  }
+}
