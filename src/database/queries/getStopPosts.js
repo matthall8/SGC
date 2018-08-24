@@ -11,8 +11,6 @@ return (pool
 
 }
 //db.task(t=> getStopPosts("Naz").then console.log(result);)
-getStopPosts("Naz").then(function(data){
-    console.log(data);
-  });
+getStopPosts("Naz");
 
 //module.exports=getStopPosts;
