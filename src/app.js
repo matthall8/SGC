@@ -15,12 +15,13 @@ app.engine(
     extname: 'hbs',
     layoutsDir: path.join(__dirname, 'views', 'layouts'),
     partialsDir: path.join(__dirname, 'views', 'partials'),
-    defaultLayout: 'main',
-
+    defaultLayout: 'main'
   })
 );
 
 app.set('port', process.env.PORT || 3000);
 app.use(routes);
+
+app.use(express.static('public'));
 
 module.exports = app;
