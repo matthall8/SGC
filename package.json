@@ -24,6 +24,7 @@
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
     "pg-promise": "^8.4.6",
     "watch": "^1.0.2"
   }

@@ -1,11 +1,13 @@
-const pool=require('../database/dbconnection')
+const pool=require('../dbconnection')
 
-const addPost=(post_type,content,cohort_id,user_id)=>{
+const addPost=(post_type,content,cohort_id,cb)=>{
   pool
   .query(
-    `INSERT INTO posts VALUES ($1,$2,$3,$4)`,[post_type,content,cohort_id,user_id]
+    `INSERT INTO posts (post_type,content,cohort_id) VALUES ($1,$2,$3)`,[post_type,content,cohort_id],
+    cb
   )
-  .catch(err=>console.log("errrrrr adding post");
 }
+
+
 
 module.exports = addPost ;
