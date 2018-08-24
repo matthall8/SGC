@@ -45,9 +45,9 @@ INSERT INTO users (username,password) VALUES ('Mattatata' ,'hunululuu4');
 INSERT INTO cohorts (cohort_name) VALUES ('Naz');
 INSERT INTO cohorts (cohort_name) VALUES ('London');
 INSERT INTO cohorts (cohort_name) VALUES ('GAZA');
-INSERT INTO posts (post_type,content) VALUES ('Stop','Stop smoking around');
-INSERT INTO posts (post_type,content) VALUES ('Go','Smoke somewhere else');
-INSERT INTO posts (post_type,content) VALUES ('Continue','Smoking away huh');
+INSERT INTO posts (post_type,content,cohort_id) VALUES ('Stop','Stop smoking around',1);
+INSERT INTO posts (post_type,content,cohort_id) VALUES ('Go','Smoke somewhere else',1);
+INSERT INTO posts (post_type,content,cohort_id) VALUES ('Continue','Smoking away huh',1);
 
 
 
