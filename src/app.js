@@ -4,8 +4,10 @@ const path = require('path');
 
 const routes = require('./routes/index');
 const helpers = require('./helpers/index.js');
-
+const bodyParse = require('body-parser');
 const app = express();
+app.use(bodyParse.json())
+app.use(bodyParse.urlencoded({ extended: false }));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

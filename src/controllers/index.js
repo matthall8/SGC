@@ -6,5 +6,6 @@ const router = express.Router();
 const home = require('./home');
 const login = require('./login');
 const signup = require('./signup');
-
-router.get('/', home.get);
+// router.post('add_Stop',home.post)
+//
+// router.get('/', home.get);
